@@ -1,0 +1,28 @@
+{
+  "name": "laravel-elixir-versions",
+  "version": "0.0.2",
+  "description": "laravel-elixir-versions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://HyanCat@github.com/HyanCat/laravel-elixir-versions.git"
+  },
+  "author": "HyanCat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HyanCat/laravel-elixir-versions/issues"
+  },
+  "homepage": "https://github.com/HyanCat/laravel-elixir-versions",
+  "dependencies": {
+    "fs": "0.0.2",
+    "gulp": "^3.8.11",
+    "gulp-rev": "^3.0.1",
+    "gulp-util": "^3.0.4",
+    "laravel-elixir": "^1.0.2",
+    "parse-filepath": "^0.5.0",
+    "vinyl-paths": "^1.0.0"
+  }
+}
