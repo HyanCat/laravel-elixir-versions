@@ -22,10 +22,10 @@ var publicDir = elixir.config.publicDir;
 
 elixir.extend('versions', function (src, buildDir) {
 	src = utilities.prefixDirToFiles(publicDir, src);
-	if (!elixir.config.versions) {
-		elixir.config.versions = new Array();
+	if (!elixir.config.versionfiles) {
+		elixir.config.versionfiles = new Array();
 	}
-	elixir.config.versions.push({
+	elixir.config.versionfiles.push({
 		src     : src,
 		buildDir: buildDir
 	});
@@ -48,8 +48,7 @@ var buildTask = function (src, buildDir) {
 
 	gulp.task('versions', function () {
 
-		elixir.config.versions.map(function (version) {
-			console.log('-----' + version.src + '-----');
+		elixir.config.versionfiles.map(function (version) {
 			src      = version.src;
 			buildDir = buildDir = getBuildDir(version.buildDir);
 
