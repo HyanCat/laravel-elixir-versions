@@ -7,6 +7,7 @@ This is the copy of `elixir-version`, but it supports multiple building version 
 You konw, In `laravel-elixir`, the `version` extension could be run only once.
 
 But sometimes you have to run `mix.version` more than once.
+
 So, it will.
 
 

@@ -50,7 +50,7 @@ var buildTask = function (src, buildDir) {
 
 		elixir.config.versionfiles.map(function (version) {
 			src      = version.src;
-			buildDir = buildDir = getBuildDir(version.buildDir);
+			buildDir = getBuildDir(version.buildDir);
 
 			var files = vinylPaths();
 
@@ -68,6 +68,8 @@ var buildTask = function (src, buildDir) {
 				.pipe(rev.manifest())
 				.pipe(gulp.dest(buildDir))
 				.on('end', function () {
+					src      = version.src;
+					buildDir = getBuildDir(version.buildDir);
 					// We'll get rid of the duplicated file that
 					// usually gets put in the "build" folder,
 					// alongside the suffixed version.
