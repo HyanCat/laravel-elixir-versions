@@ -1,11 +1,11 @@
-var utilities  = require('./utilities');
+var elixir     = require('laravel-elixir');
+var gulp       = require('gulp');
 var parsePath  = require('parse-filepath');
 var vinylPaths = require('vinyl-paths');
-var elixir     = require('laravel-elixir');
 var rev        = require('gulp-rev');
-var gulp       = require('gulp');
 var del        = require('del');
 var fs         = require('fs');
+var utilities  = require('laravel-elixir/ingredients/commands/Utilities');
 
 var publicDir = elixir.config.publicDir;
 
