@@ -1,5 +1,11 @@
 # laravel-elixir-versions
 
+## Notice
+
+!! It's deprecated now.
+This package only support laravel-elixir with verison 2.\*,
+and there is no need for laravel-elixir 3.\*.
+
 ## Description
 
 This is the copy of `elixir-version`, but it supports multiple building version numbers.
